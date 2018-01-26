@@ -15,12 +15,12 @@ class Svg2Js {
       }
       resolve()
     })
-  }
+  })
 
   convert = (opts = {}) => new Promise((resolve, reject) => {
     var data = fs.readFileSync(opts.source)
     resolve(data.toString())
-  }
+  })
 
 }
 
